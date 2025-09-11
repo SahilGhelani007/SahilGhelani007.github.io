@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Real-Time Website Traffic Analytics on AWS — Portfolio Details</title>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/css/main.css" rel="stylesheet" />
+</head>
+<body class="portfolio-details-page">
+
+  <main id="main" class="container py-5">
+    <a href="index.html#portfolio" class="btn btn-outline-secondary mb-4">
+      <i class="bi bi-arrow-left"></i> Back to Portfolio
+    </a>
+
+    <header class="mb-4">
+      <h1 class="h2">Real-Time Website Traffic Analytics Using Distributed & Scalable AWS Services</h1>
+      <p class="text-muted mb-1">Jan 2025 – May 2025 · University of New Haven</p>
+      <div class="d-flex flex-wrap gap-2 small">
+        <span class="badge bg-secondary">AWS</span>
+        <span class="badge bg-secondary">Kinesis</span>
+        <span class="badge bg-secondary">Lambda</span>
+        <span class="badge bg-secondary">S3</span>
+        <span class="badge bg-secondary">Glue</span>
+        <span class="badge bg-secondary">Athena</span>
+        <span class="badge bg-secondary">Power BI</span>
+        <span class="badge bg-secondary">Data Engineering</span>
+        <span class="badge bg-secondary">Serverless</span>
+      </div>
+    </header>
+
+    <!-- Gallery -->
+    <div class="row g-3 mb-4">
+      <div class="col-md-7">
+        <a href="assets/img/portfolio/aws-traffic.png" class="glightbox" data-gallery="aws">
+          <img src="assets/img/portfolio/aws-traffic.png" class="img-fluid rounded" alt="Power BI traffic dashboard" />
+        </a>
+      </div>
+      <div class="col-md-5">
+        <a href="assets/img/portfolio/aws-arch-1.jpg" class="glightbox d-block mb-3" data-gallery="aws">
+          <img src="assets/img/portfolio/aws-arch-1.jpg" class="img-fluid rounded" alt="AWS pipeline architecture" />
+        </a>
+        <a href="assets/img/portfolio/aws-arch-2.jpg" class="glightbox d-block" data-gallery="aws">
+          <img src="assets/img/portfolio/aws-arch-2.jpg" class="img-fluid rounded" alt="Athena/Glue data model" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Overview -->
+    <section class="mb-4">
+      <h2 class="h5">Overview</h2>
+      <p>
+        Built a cloud-native, real-time data pipeline to simulate and analyze web traffic using NASA’s HTTP Web Server Logs.
+        The pipeline ingests, processes, stores, and queries high-velocity logs using <strong>AWS Kinesis, Lambda, S3, Glue, Athena</strong>,
+        and visualizes insights in <strong>Microsoft Power BI</strong>—surfacing traffic trends, top URLs, and system health metrics.
+      </p>
+    </section>
+
+    <!-- Architecture -->
+    <section class="mb-4">
+      <h2 class="h5">Architecture</h2>
+      <ul>
+        <li><strong>Ingestion:</strong> Log producers → <em>Kinesis Data Stream</em></li>
+        <li><strong>Processing:</strong> <em>AWS Lambda</em> for cleansing/enrichment → partitioned data in <em>Amazon S3</em></li>
+        <li><strong>Metadata & Query:</strong> <em>AWS Glue Data Catalog</em> + <em>Amazon Athena</em> for serverless SQL</li>
+        <li><strong>BI Layer:</strong> <em>Power BI</em> dashboards with scheduled refresh</li>
+      </ul>
+    </section>
+
+    <!-- Highlights -->
+    <section class="mb-4">
+      <h2 class="h5">Highlights</h2>
+      <ul>
+        <li>End-to-end <strong>serverless</strong> design with <strong>scalable</strong> ingestion and <strong>fault tolerance</strong>.</li>
+        <li>Modeled partitions/bucketing to optimize Athena query performance and cost.</li>
+        <li>Delivered KPI views: <em>Requests over Time</em>, <em>Top URLs</em>, <em>HTTP Status Distribution</em>, <em>Geo View</em>.</li>
+      </ul>
+    </section>
+
+    <!-- Tech & Links -->
+    <section class="mb-4">
+      <h2 class="h5">Tech & Artifacts</h2>
+      <ul class="mb-1">
+        <li><strong>Tech:</strong> AWS (Kinesis, Lambda, S3, Glue, Athena), Power BI</li>
+        <li><strong>Dataset:</strong> NASA HTTP Web Server Logs</li>
+        <li><strong>PDF:</strong> <a href="assets/docs/AWS_Sahil _Ghelani.pdf" target="_blank">View Here (PDF)</a></li>
+        <!-- Optional: <li><strong>Repo:</strong> <a href="#" target="_blank">GitHub Repo</a></li> -->
+      </ul>
+    </section>
+  </main>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script>const lightbox = GLightbox({selector: '.glightbox'});</script>
+</body>
+</html>
